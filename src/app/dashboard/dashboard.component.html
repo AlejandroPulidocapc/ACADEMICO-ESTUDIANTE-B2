@@ -1,0 +1,7 @@
+<h2>Top Estudiantes</h2>
+<div class="estudiantes-menu">
+  <a *ngFor="let estudiante of estudiantes"
+    routerLink="/detail/{{estudiante.id}}">
+    {{estudiante.name}}
+  </a>
+</div>
